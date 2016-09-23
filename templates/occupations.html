@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--Thanks Bootstrap!-->
+
+
+		<title>Occupations</title>
+	</head>
+
+	<body>
+
+		<h1>
+			Occupations
+		</h1>	
+		<p>This page generates a table from a CSV file and uses the data to randomly select an occupation based on percentages.</p>
+
+
+		<h3>Table of Occupations</h3>
+		<!-- Make a table of the occupations -->
+		<table border="1">
+			<tr> 
+				<th> Job</th>
+				<th> Probablility</th>
+			</tr>
+		{%- for key in table %} 
+		<tr>
+			<td>{{ table[key] }}</td>
+			<td>{{ key  }}</td>
+		</tr>
+		{%- endfor %}
+		</table>
+		<br>
+
+		<p>	
+		<h3>Random Occupation</h3>
+			{{occ}}
+		</p>	
+		<p>
+		<h3>Pages</h3>
+		<ol>
+			<li><a href = "/">Home</a></li>
+			<li><a href = "/occupations">Occupations</a></li>
+		</ol>
+		</p>
+
+	</body>
+
+
+</html>

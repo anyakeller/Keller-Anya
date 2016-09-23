@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--Thanks Bootstrap!-->
+		<title>Home</title>
+	</head>
+
+	<body>
+
+		<h1>
+			Homepage
+		</h1>
+		<p>
+			You are home.  Congrats.
+			Have a {{ potato }}
+		</p>	
+		<p>
+		<h3>Pages</h3>
+
+		<ol>
+			<li><a href = "/">Home</a></li>
+			<li><a href = "/occupations">Occupations</a></li>
+		</ol>
+		</p>
+
+		<ul>
+		{%- for item in l %} 
+			<li>{{ item }}	</li>
+		<br>
+		{%- endfor %}
+		</ul>
+	</body>
+
+
+</html>

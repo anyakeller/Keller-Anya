@@ -1,12 +1,7 @@
-from flask import Flask, render_template
-app = Flask(__name__)
-
-#Random Occupation code
 import random
 # Opens and reads file into stringthing
 file=open("occupations.csv", "r")
 stringthing = file.read()
-file.close()
 
 # Splits the string into an array called splitString
 splitString = str.split(stringthing, "\r\n")
@@ -37,23 +32,25 @@ def getRandomOccupation():
 		if temp == 859:
 			return dict[key]
 
-#Start of routes
-@app.route("/")
-#index
-def index():
-	l = ["cheese", "queso", "your face", "lmao"]
-	return render_template("index.html", potato="turtle", l = l)
-	
-@app.route("/occupations")
+#To Test
+def quickText():
+	results = {}
+	#lengthHold = len(dict)
+	#while (lengthHold > 0):
+	for key in dict:
+		results[dict[key]]=0
+	counter=0
+	while (counter < 10000):
+		counter+=1
+		rand = getRandomOccupation()
+		results[rand] = results[rand]+1
+	output = ""
+	for key in results:
+		output+=key+" happend "+(str)(results[key])+"/10000 times\n"#key in results is the name of proffesion
+	return output
 
-def occupations():
-	return render_template("occupations.html", table = dict, occ = getRandomOccupation())
+#print getRandomOccupation()
 
-@app.route("/morestuff")
+print quickText()
 
-def morestuff():
-	return render_template("index.html")
-
-if __name__ == "__main__":
-	#app.debug = True #
-	app.run()
+file.close()
