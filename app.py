@@ -13,6 +13,7 @@ splitString = str.split(stringthing, "\r\n")
 
 dict = {}
 
+'''
 # Loops through array line by line
 for line in splitString:
 	if "Total" not in line:
@@ -22,8 +23,20 @@ for line in splitString:
 		elif len(line)>0 and splitString.index(line)!=0:
 			#print line
 			dict[float(line[line.index(',')+1:])]=line[0:line.index(',')]
-        
-#print dict
+'''
+
+for line in splitString:
+	if "Total" not in line and "Job" not in line:
+		if line.count(",") == 2: # if there are no parenthesis 
+			#print line
+			splitLine = line.split(",")
+			dict[float(splitLine[2])] = [splitLine[0],splitLine[1]]
+		elif line.count(",") > 2: #deal with extra commas
+			line = line[1:]
+			jobTitle = line[:line.index('"')]
+			line = line[line.index('"')+2:]
+			dict[float(line[line.index(",")+1:])] = [jobTitle, line[:line.index(",")]]
+print dict
 
 #because we have to make this a function...
 def getRandomOccupation():

@@ -24,7 +24,7 @@
 			</tr>
 		{%- for key in table %} 
 		<tr>
-			<td>{{ table[key] }}</td>
+			<td><a href=" {{table[key][1]}} "> {{ table[key][0] }} </a></td>
 			<td>{{ key  }}</td>
 		</tr>
 		{%- endfor %}

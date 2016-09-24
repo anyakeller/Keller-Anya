@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
+Job Class,Link,Percentage
+Management,http://www.careerprofiles.info/management-careers.html,6.1
+Business and Financial operations,http://www.careerprofiles.info/business-careers.html,5
+Computer and Mathematical,http://www.careerprofiles.info/computer-careers.html,2.7
+Architecture and Engineering,http://www.careerprofiles.info/architect-career.html,1.7
+"Life, Physical and Social Science",http://www.careerprofiles.info/archeologist-anthropologist.html,0.9
+Community and Social Service,http://www.careerprofiles.info/social-worker-career.html,1.6
+Legal,http://www.careerprofiles.info/law-enforcement-careers.html,0.8
+"Education, training and library",http://www.careerprofiles.info/education-careers.html,6.1
+"Arts, design, entertainment, sports and media",http://www.careerprofiles.info/art-and-design-degrees.html,1.7
+Healthcare practioners and technical,http://www.careerprofiles.info/health-careers.html,5.5
+Healthcare support,http://www.careerprofiles.info/career-in-health.html,2.8
+Protective service,http://www.careerprofiles.info/federal-protective-service.html,2.3
+Food preparation and serving,http://www.careerprofiles.info/installation-repair-careers.html,8.3
+Building and grounds cleaning and maintenance,http://www.careerprofiles.info/installation-repair-careers.html,3.7
+Personal care and service,http://www.careerprofiles.info/general-aide.html,4
+Sales,http://www.careerprofiles.info/administrative-careers.html,10.2
+Office and administrative support,http://www.careerprofiles.info/administrative-careers.html,15.1
+"Farming, fishing and forestry",http://www.careerprofiles.info/forestry-careers.html,0.6
+Construction and extraction,http://www.careerprofiles.info/construction-careers.html,4.3
+"Installation, maintenance and repair",http://www.careerprofiles.info/installation-repair-careers.html,3.8
+Production,http://www.careerprofiles.info/production-careers.html,6.1
+Transportation and material moving,http://www.careerprofiles.info/transportation-careers.html,6.5
 Total,99.8
